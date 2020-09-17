@@ -1,6 +1,6 @@
 {
   "name": "@adaptivelink/iata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "IATA codes",
   "license": "MIT",
   "main": "dist/bundle.js",
@@ -16,7 +16,12 @@
   "bugs": {
     "url": "https://github.com/adaptive/iata/issues"
   },
+  "homepage": "https://github.com/adaptive/iata#readme",
   "author": "Hugo Romano <adaptive@hey.com>",
+  "keywords": [
+    "iata",
+    "airports"
+  ],
   "private": false,
   "devDependencies": {
     "prettier": "2.1.2",
