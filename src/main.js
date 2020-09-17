@@ -1,3 +1,5 @@
 import airports from "./airports.js";
 
-export default { airports };
+const iata = { airports };
+
+export default iata;
