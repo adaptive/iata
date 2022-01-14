@@ -1,6 +1,6 @@
 {
   "name": "@adaptivelink/iata",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "IATA codes",
   "license": "MIT",
   "main": "dist/bundle.js",
