@@ -1,6 +1,6 @@
 {
   "name": "@adaptivelink/iata",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "IATA codes",
   "license": "MIT",
   "main": "dist/bundle.js",
@@ -26,7 +26,7 @@
   ],
   "devDependencies": {
     "prettier": "2.6.0",
-    "rollup": "2.70.0",
+    "rollup": "2.70.1",
     "rollup-plugin-terser": "7.0.2"
   },
   "scripts": {
