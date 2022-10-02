@@ -33,6 +33,5 @@
     "build": "rollup -c",
     "prebuild": "prettier --write '**/*.{js,json}' '!dist/**' --arrow-parens avoid --trailing-comma none",
     "test": "node test/index.test.js"
-  },
-  "packageManager": "yarn@3.2.3"
+  }
 }

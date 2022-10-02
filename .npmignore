@@ -6,3 +6,4 @@ rollup.config.js
 .github
 test
 .yarn
+pnpm-lock.yaml
