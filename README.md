@@ -4,7 +4,7 @@
 
 ES Module with geolocation of airport IATA codes.
 
-### Install with `yarn` or `npm`
+### Install with `yarn`, `npm` or `pnpm` 
 
 ```bash
 yarn add @adaptivelink/iata
@@ -12,4 +12,8 @@ yarn add @adaptivelink/iata
 
 ```bash
 npm i @adaptivelink/iata
+```
+
+```bash
+pnpm i @adaptivelink/iata
 ```
