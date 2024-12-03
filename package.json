@@ -25,7 +25,7 @@
     "longitude"
   ],
   "devDependencies": {
-    "prettier": "3.4.0",
+    "prettier": "3.4.1",
     "rollup": "4.28.0",
     "rollup-plugin-terser": "7.0.2"
   },
