@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       prettier:
-        specifier: 3.5.0
-        version: 3.5.0
+        specifier: 3.5.1
+        version: 3.5.1
       rollup:
         specifier: 4.34.8
         version: 4.34.8
@@ -206,8 +206,8 @@ packages:
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
 
-  prettier@3.5.0:
-    resolution: {integrity: sha512-quyMrVt6svPS7CjQ9gKb3GLEX/rl3BCL2oa/QkNcXv4YNVBC9olt3s+H7ukto06q7B1Qz46PbrKLO34PR6vXcA==}
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -389,7 +389,7 @@ snapshots:
 
   merge-stream@2.0.0: {}
 
-  prettier@3.5.0: {}
+  prettier@3.5.1: {}
 
   randombytes@2.1.0:
     dependencies:
