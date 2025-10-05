@@ -17,3 +17,7 @@ npm i @adaptivelink/iata
 ```bash
 pnpm i @adaptivelink/iata
 ```
+
+```bash
+bun i @adaptivelink/iata
+```

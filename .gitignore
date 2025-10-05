@@ -2,3 +2,4 @@ node_modules
 package
 .yarn/cache
 .yarn/install-state.gz
+.DS_Store
