@@ -7,3 +7,5 @@ rollup.config.js
 test
 .yarn
 pnpm-lock.yaml
+bun.lock
+bun.lockb

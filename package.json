@@ -1,38 +1,33 @@
 {
   "name": "@adaptivelink/iata",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "IATA codes",
-  "license": "MIT",
-  "main": "dist/bundle.js",
-  "types": "main.d.ts",
-  "type": "module",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "keywords": [
+    "airports",
+    "iata",
+    "latitude",
+    "longitude"
+  ],
+  "homepage": "https://github.com/adaptive/iata#readme",
+  "bugs": {
+    "url": "https://github.com/adaptive/iata/issues"
   },
+  "license": "MIT",
+  "author": "Hugo Romano <adaptive@hey.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adaptive/iata.git"
   },
-  "bugs": {
-    "url": "https://github.com/adaptive/iata/issues"
-  },
-  "homepage": "https://github.com/adaptive/iata#readme",
-  "author": "Hugo Romano <adaptive@hey.com>",
-  "keywords": [
-    "iata",
-    "airports",
-    "latitude",
-    "longitude"
-  ],
-  "devDependencies": {
-    "prettier": "3.8.1",
-    "rollup": "4.59.0",
-    "rollup-plugin-terser": "7.0.2"
+  "type": "module",
+  "main": "dist/bundle.js",
+  "types": "main.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "rollup -c",
-    "prebuild": "prettier --write '**/*.{js,json}' '!dist/**' --arrow-parens avoid --trailing-comma none",
-    "test": "node test/index.test.js"
+    "build": "bun build ./src/main.js --outfile ./dist/bundle.js --format esm --minify",
+    "prebuild": "oxfmt '**/*.{js,json}' '!dist/**'",
+    "test": "bun test"
   },
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "bun@1.3.11"
 }

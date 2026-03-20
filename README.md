@@ -2,12 +2,12 @@
 
 [![npm](https://img.shields.io/npm/v/@adaptivelink/iata.svg)](https://www.npmjs.com/package/@adaptivelink/iata)
 
-A lightweight ES module that exposes a canonical map of IATA airport codes to latitude/longitude coordinates. Bundled for quick lookups, validation, and geographic tooling.
+A lightweight ES module that exposes a canonical map of IATA airport codes to latitude/longitude coordinates. Built for quick lookups, validation, and geographic tooling.
 
 ## Installation
 
 ```bash
-pnpm add @adaptivelink/iata
+bun add @adaptivelink/iata
 # or
 npm i @adaptivelink/iata
 # or
@@ -32,19 +32,25 @@ The dataset is exported as an iterable `Map`, making it easy to filter, transfor
 ## Project Structure
 
 - `src/` authoring source (dataset and module entry point)
-- `dist/` generated Rollup bundle consumed by downstream projects
+- `dist/` generated Bun build output consumed by downstream projects
 - `main.d.ts` TypeScript declarations kept in sync with `src/`
-- `test/` integrity checks executed against the built bundle
+- `test/` Bun test suite covering the public API and dataset integrity
 
 ## Development
 
 ```bash
-pnpm install          # install dependencies
-pnpm run build        # format JS/JSON then bundle to dist/
-pnpm test             # validate dataset integrity against the bundle
+bun install           # install dependencies
+bun run build         # run global oxfmt, then build dist/bundle.js with Bun
+bun test              # run the Bun test suite in test/
 ```
 
-Rebuild before testing so the integrity check reflects the latest source changes.
+Formatting is handled by a globally installed `oxfmt`. Install it before running the build:
+
+```bash
+oxfmt --version
+```
+
+The test suite reads from `src/` so it validates current source changes without requiring a rebuild first.
 
 ## Updating Airport Data
 
